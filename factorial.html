@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="factorial.css">
+    <title>FACTORIAL</title>
+</head>
+<body>
+    <div class="block">
+    <center>
+        <h1>FACTORIAL</h1><br>
+        <p>Enter An Integer :</p><input type="text" id="int"><br><br><br>
+        <button type="button" onclick="fact()">ENTER</button>
+
+    </center>
+    </div>
+    <script>
+        function fact(){
+            console.log("START");
+            factorial=1;
+            num=parseInt(int.value);
+            for(x=num;x>0;x--){
+                factorial*=x;
+            }
+            console.log("FACTORIAL OF "+num+" is ="+factorial);
+            alert(`FACTORIAL IS ${factorial}`);
+            console.log("END");
+        }
+    
+    
+    </script>
+</body>
+</html>
